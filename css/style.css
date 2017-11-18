@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+/*@import url('https://fonts.googleapis.com/css?family=Raleway'); */
+
+/*
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+
+/* one font for the entire project */
+body {
+    font-family: 'Poiret One', serif;
+}
+
+/* main image to take up half the page */
+#header {
+    width:100%;
+    height:500px;
+    background-image: url("../images/vangogh2.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    font-size: 90px;
+    text-align: center;
+    color: #190a2d;
+    /*background-repeat: no-repeat;*/
+    /*position: absolute;*/
+}
+
+/* navigation bar to appear on all pages */
+
+nav {
+    padding:20px;
+    color: #d4d5d6;
+    background-color:#2f3133;
+    align-items: center;
+}
+
+#information {
+    padding: 10px;
+    background-color: #c2d3c5;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li {
+    display: inline-block;
+    font-size: 20px;
+    color: #f4f6f7;
+    margin: 1em;
+}
+
+.information a {
+    color: #9a89a5;
+    margin: 0px 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 3px #bccdd1 solid;
+    align-items: center;
+    height:350px;
+}
+
+a:hover, a:active {
+    background-color: rgb(164, 219, 151);
+}
+
+/* images linked to external sites for more information */
+.image-gallery {
+    margin: 20px 10px;
+    display: flex;
+    justify-content: space-around;
+    /*flex-wrap: wrap;*/
+    /*background-image: no-repeat;*/
+    }
+
+.image7 {
+    background-image: url("../images/franz.jpg");
+    background-size: cover;
+    background-color: #edeade;
+    height: 400px;
+    width: 400px;
+    margin: 15px;
+    font-size: 20px;
+}
+
+.image8 {
+    background-image: url("../images/dali.jpg");
+    background-color: #edeade;
+    height: 400px;
+    width: 400px;
+    margin: 15px;
+    font-size: 20px;
+}
+
+.image9 {
+    background-image: url("../images/monet.jpg");
+    background-color: #edeade;
+    height: 400px;
+    width: 400px;
+    margin: 15px;
+    font-size: 20px;
+}
+
+#history {
+    width:100%;
+    height:400px;
+    background-image: url("../images/frame.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 80px;
+    color: #f2f4f2;
+}
+
+p {
+    font-size: 30px;
+    /*font-family: 'Poiret One', serif;*/
+    color: #272828;
+}
+
+#renn {
+    width:100%;
+    height:400px;
+    background-image: url("../images/vangogh.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    font-size: 80px;
+    text-align: center;
+    color: #f2f4f2;
+}
+
+#imp {
+    width:100%;
+    height:400px;
+    background-image: url("../images/field.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    font-size: 80px;
+    text-align: center;
+    color: #f2f4f2;
+}
+
+#contact {
+    width:100%;
+    height:400px;
+    background-image: url("../images/hills.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    font-size: 80px;
+    text-align: center;
+    color: #190a2d;
+}
+
+.main_content {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.para_info {
+    flex-grow: 1;
+    padding: 0 10px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.myimage {
+    width: 30%;
+    max-width: 300px;
+    min-width: 200px;
+    max-height: 300px;
+    min-height: 200px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.image1 {
+    background-image: url("../images/artschool.jpg");
+    background-color: #edefed;
+}
+
+.image2 {
+    background-image: url("../images/picnic.jpg");
+    background-color: #edeade;
+}
+
+.image3 {
+    background-image: url("../images/painting.jpg");
+    background-color: #edeade;
+}
+
+.image4 {
+    background-image: url("../images/painting3.jpg");
+    background-color: #edeade;
+}
+
+.image5 {
+    background-image: url("../images/ride.jpg");
+    background-color: #edeade;
+}
+
+.image6 {
+    background-image: url("../images/house.jpg");
+    background-color: #edeade;
+}
+
+#footer {
+    margin-left: 15px;
+}
+
+.contactinfo {
+    font-size: 20px;
+    text-align: left;
+    width:50%;
+    height:50px;
+    margin-left: 20px;
+}
+
+.mainbox {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.hpix {
+    display: flex;
+    width:40%;
+    height:300px;
+    flex-wrap: wrap;
+}
+
+/* images displayed in flexboxes of different sizes */
+.fpix1 {
+    position: relative;
+    top: 10px;
+    right: 30px;
+    width:75%;
+    display: flex;
+    background-image: url("../images/earth.jpg");
+    background-image: cover;
+}
+
+.fpix2 {
+    position: relative;
+    top: 20px;
+    right: 20px;
+    width:50%;
+    display: flex;
+    background-image: url("../images/art.jpg");
+}
+
+.fpix3 {
+    position: relative;
+    top: -10px;
+    right: 50px;
+    width:40%;
+    display: flex;
+    background-image: url("../images/bridge.jpg");
+}
+
+/* facebook links only to main facebook page */
+.fa {
+    padding: 20px;
+    font-size: 50px;
+    text-align: center;
+    margin-left: 10px;
+    width: 50px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.fa-facebook {
+   background: #36579b;
+   color: #f4f5f7;
+}
